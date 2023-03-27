@@ -1,0 +1,55 @@
+section{
+    width: 80%;
+    display: flex;
+    grid-auto-flow: column;
+    grid-column: auto;
+    gap:2em;
+    margin: auto;
+    padding: 2em;
+    vertical-align: middle;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    border-radius: 1em;
+
+    width: 20em;
+    z-index: 1;
+    color: white;
+    cursor: pointer;
+    transition: all 0.5s;
+    background-color: var(--second-bg-color);
+}
+
+.descricao{
+    background-color: var(--second-bg-color);
+    border-radius: 0 0 1em 1em;
+    padding: 1em;
+}
+
+.card:hover{
+    border-radius: 1em;
+    box-shadow: 10px 5px 5px rgb(195, 195, 195);
+    width: 20em;
+    z-index: 1;
+    background-color: var(--third-bg-color);
+    transition: all 0.5s;
+
+}
+
+.card img{
+    position: relative;
+    width:20em;
+    height:18em;
+    border-radius: 1em 1em 0 0;
+    object-fit: cover;
+    transition: all 1s;
+/*     object-position: 20px 10px; /* try 20% 10% */
+}
+
+.card img:hover{
+    object-position: 0px 0.15em; /* try 20% 10% */
+    transition: all 1s;
+}

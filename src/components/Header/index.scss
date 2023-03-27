@@ -1,0 +1,51 @@
+header{
+    height: auto;
+    background-color: var(--main-bg-color);
+    padding: 1em;
+    margin: 0;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header img{
+    width: 15em;
+}
+
+header input{
+    padding: 1em;
+    width: 50vh;
+    height:2em;
+    border-radius: 2em;
+    border: none;
+    font-family: var(--main-font-ubuntu);
+    margin: 0.5em;
+}
+
+header button{
+    width: 10vh;
+    height:4em;
+    border-radius: 2em;
+    border: none;
+    font-family: var(--main-font-ubuntu);
+    background-color: var(--second-bg-color);
+    color:white;
+    align-items: center;
+    vertical-align: middle;
+    margin: 0.5em;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+header button:hover{
+    font-family: var(--main-font-ubuntu);
+    background-color: var(--third-bg-color);
+    transition: all 0.5s;
+}
+
+.search{
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+}

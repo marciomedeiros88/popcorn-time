@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,300&family=Ubuntu:wght@700&display=swap');
+:root{
+    --main-font-ubuntu: 'Lato', sans-serif;
+    --main-bg-color: #083D48;
+    --second-bg-color: #081F2E;
+    --third-bg-color: #02131e;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+h1{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 24pt;
+    font-weight: 700;
+}
+
+h2{
+    font-family: 'Lato', sans-serif;
+    font-size: 18pt;
+    font-weight: 400;
+}
+
+p{
+    font-family: 'Lato', sans-serif;
+    font-size: 12pt;
+    font-weight: 300;
+}
