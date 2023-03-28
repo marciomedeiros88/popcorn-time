@@ -1,26 +1,27 @@
 section{
-    width: 80%;
+    width: 100%;
     display: flex;
-    grid-auto-flow: column;
-    grid-column: auto;
-    gap:2em;
+    gap:1em;
     margin: auto;
     padding: 2em;
-    vertical-align: middle;
-    align-items: center;
+    align-items:start;
     justify-content: center;
     flex-wrap: wrap;
+    flex-direction: row;
+
 }
 
 .card{
+    margin-top: 1em;
     border-radius: 1em;
-
-    width: 20em;
+    width: 24em;
+    height: 30em;
     z-index: 1;
     color: white;
     cursor: pointer;
     transition: all 0.5s;
     background-color: var(--second-bg-color);
+    vertical-align: top;
 }
 
 .descricao{
@@ -32,7 +33,7 @@ section{
 .card:hover{
     border-radius: 1em;
     box-shadow: 10px 5px 5px rgb(195, 195, 195);
-    width: 20em;
+    width: 24em;
     z-index: 1;
     background-color: var(--third-bg-color);
     transition: all 0.5s;
@@ -41,8 +42,8 @@ section{
 
 .card img{
     position: relative;
-    width:20em;
-    height:18em;
+    width:24em;
+    height:16em;
     border-radius: 1em 1em 0 0;
     object-fit: cover;
     transition: all 1s;
@@ -50,6 +51,32 @@ section{
 }
 
 .card img:hover{
+    //transform: translateY(-10px);
     object-position: 0px 0.15em; /* try 20% 10% */
     transition: all 1s;
+}
+
+.card button{
+    width: 10vh;
+    height:4em;
+    border-radius: 2em;
+    border: none;
+    font-family: var(--main-font-ubuntu);
+    background-color: var(--third-bg-color);
+    color:white;
+    align-items: center;
+    vertical-align: middle;
+    margin: 0.5em;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.card button:hover{
+    font-family: var(--main-font-ubuntu);
+    background-color: var(--main-bg-color);
+    transition: all 0.5s;
+}
+
+.card h2{
+    color:#fe8f00;
 }

@@ -16,7 +16,7 @@ function App() {
     <div className='Header'>
         <Header/>
     </div>
-    <div className='Header'>
+    <div className='Outlet'>
         <Outlet/>
     </div>
     <div className='Footer'>
