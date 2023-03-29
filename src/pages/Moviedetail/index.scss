@@ -1,0 +1,76 @@
+.sectionmovies{
+    width:60%;
+    display: grid;
+    grid-auto-flow: column;
+    gap:5em;
+    margin: auto;
+    padding: 2em;
+    justify-content: center;
+}
+
+.left_img{
+    width: 30em;
+    border-radius: 1em;
+}
+
+.left_img img{
+    object-fit: cover;
+    width: 30em;
+    border-radius: 1em;
+}
+.left{
+    width: auto;
+}
+.right{
+    color: var(--third-bg-color);
+    padding: 1em;
+}
+
+h1{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 32pt;
+    font-weight: 700;
+}
+
+h2{
+    font-family: 'Lato', sans-serif;
+    font-size: 18pt;
+    font-weight: 400;
+    color:#fe8f00;
+}
+
+p{
+    font-family: 'Lato', sans-serif;
+    font-size: 16pt;
+    font-weight: 300;
+}
+
+.popularity{
+    color:white;
+    background-color: var(--second-bg-color);
+    padding:0.5em;
+    border-radius: 0.5em;
+    width:45%;
+    text-align: center;
+}
+
+.right button{
+    width: 10vh;
+    height:4em;
+    border-radius: 2em;
+    border: none;
+    font-family: var(--main-font-ubuntu);
+    background-color: var(--second-bg-color);
+    color:white;
+    align-items: center;
+    vertical-align: middle;
+    margin: 0.5em;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.right button:hover{
+    font-family: var(--main-font-ubuntu);
+    background-color: var(--third-bg-color);
+    transition: all 0.5s;
+}

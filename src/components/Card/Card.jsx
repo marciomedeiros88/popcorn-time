@@ -6,7 +6,7 @@ function Card({movieProp}){ /* Aqui a função recebe a propriedade enviada pela
     return(
         <>
         
-        <section>
+        <section className='sectioncard'>
             <div className='card'>
                 <div><img src={`https://image.tmdb.org/t/p/w500${movieProp.poster_path}`} alt={movieProp.title} /></div>
                 <div className='descricao'>

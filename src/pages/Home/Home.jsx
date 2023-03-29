@@ -1,10 +1,9 @@
-import logopopcorn from '../../assets/popcorntime.svg'
 import './index.scss'
 import Card from '../../components/Card/Card'
 import { MovieService } from '../../api/MovieService'
 import {useState, useEffect} from 'react'
 
-function Home(){
+function Home({searchValueProp}){
     const [movies, setMovies] = useState([])
 
     async function getMovies(){
@@ -15,26 +14,33 @@ function Home(){
 
         setMovies(results);
     }
+    async function getMovieSearch(movieString){
+        const {
+            data:{results},
+        } = await MovieService.searchMovies(movieString);
+        setMovies(results);
+    }
 
     useEffect(() => {
         getMovies();
     }, []);
 
     useEffect(() => {
-        console.log(movies)
-    });
+        if(searchValueProp){
+            getMovieSearch(searchValueProp)
+        } if(searchValueProp === ""){
+            getMovies()
+        }
+        console.log(searchValueProp)
+    }, [searchValueProp]);
     
 
     return(
         <>
-
         <section className='Cards'>
             {movies.map((movie) => (<div key={movie.id}><Card movieProp={movie}/></div> 
             ))}{/* Essa propriedade movieProp tem que ser chamada no componente filho */}
         </section>
-        <div className='Cards'>
-        
-        </div>
         </>
     )
 }

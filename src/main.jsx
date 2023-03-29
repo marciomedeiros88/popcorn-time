@@ -3,14 +3,14 @@ import ReactDOM from 'react-dom/client'
 import App from './App'
 import './index.scss'
 import {
-  createBrowserRouter,
+  BrowserRouter,
   RouterProvider,
 } from "react-router-dom";
 
 import Home from './pages/Home/Home'
 import MovieDetail from './pages/Moviedetail/Moviedetail'
 
-const router = createBrowserRouter([
+/* const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
@@ -25,10 +25,12 @@ const router = createBrowserRouter([
       },
     ]
   },
-]);
+]); */
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <BrowserRouter>
+    <App/>
+    </BrowserRouter>
   </React.StrictMode>,
 )

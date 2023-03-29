@@ -1,16 +1,38 @@
-import logopopcorn from '../../assets/popcorntime.svg'
+import {useState, useEffect} from 'react'
 import './index.scss'
+import {Link, useParams } from 'react-router-dom'
+import MovieService from '../../api/MovieService';
 
 function MovieDetail(){
+    const {id} = useParams(); /* constante que recebe o id do filme atraves do useParams // as chaves no {id} vai desestruturar o id*/
+    const [movie, setMovie] = useState({});
+
+    async function getMovie(){
+        const {data} = await MovieService.getMovieDetails(id)
+        setMovie(data)
+    }
+
+    useEffect(() => {
+        getMovie()
+        console.log(movie)
+    },[])
+    
     return(
         <>
-        <header>
-            <div><img src={logopopcorn} alt="Logo Popcorn Time" /></div>
-            <div className='search'>
-            <div><input type="text" placeholder='Digite aqui o video que procura'/></div>
-            <div><button>Buscar</button></div>
+        <section className='sectionmovies'>
+            <div className='left'>
+                <div className='left_img'><img src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} alt={movie.title} /></div>
             </div>
-            </header>
+            <div className='right'>
+                <div>
+                    <h1 className='title'>{movie.title}</h1>
+                    <h2 className='average'>{movie.vote_average}</h2>
+                    <p className='overview'>{movie.overview}</p>
+                    <p className='popularity'>Popularidade: {movie.revenue}</p>
+                </div>
+                <div><Link to={"/"}><button>Voltar</button></Link></div>
+            </div>
+        </section>
         </>
     )
 }

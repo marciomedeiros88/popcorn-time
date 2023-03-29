@@ -24,7 +24,7 @@ header input{
 }
 
 header button{
-    width: 10vh;
+    width: 15vh;
     height:4em;
     border-radius: 2em;
     border: none;
@@ -46,6 +46,12 @@ header button:hover{
 
 .search{
     display: grid;
-    grid-auto-flow: column;
+    grid-auto-flow: row;
     align-items: center;
+    width:60%;
+    justify-content: center;
+}
+
+form{
+    display: flex;
 }
