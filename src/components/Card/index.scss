@@ -1,21 +1,16 @@
 .sectioncard{
     width: 100%;
     display: flex;
-    gap:1em;
-    margin: auto;
     padding: 1em;
     align-items:start;
     justify-content: center;
     flex-wrap: wrap;
     flex-direction: row;
-
 }
 
 .card{
-    margin-top: 1em;
     border-radius: 1em;
     width: 24em;
-    height: 30em;
     z-index: 1;
     color: white;
     cursor: pointer;
