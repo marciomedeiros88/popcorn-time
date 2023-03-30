@@ -1,4 +1,5 @@
-![Logo](https://marciomedeirosdesign.com.br/nucleoweb/popcorntime/imagens/popcorntime.png)
+![popcorntime](https://user-images.githubusercontent.com/118381472/228959543-2732deda-e474-4b0e-8e3f-dd07867d8bca.png)
+
 
 # Popcorn time: buscador de filmes
 
