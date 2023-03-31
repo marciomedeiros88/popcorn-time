@@ -17,7 +17,18 @@
     object-fit: cover;
     width: 30em;
     border-radius: 1em;
+    transition: all 1s;
+    object-position: 50% 50%;
 }
+
+.left_img img:hover{
+    object-fit: cover;
+    width: 32em;
+    border-radius: 1em;
+    transition: all 1s;
+    object-position: 50% 50%;
+}
+
 .left{
     width: auto;
 }
@@ -26,21 +37,21 @@
     padding: 1em;
 }
 
-h1{
-    font-family: 'Ubuntu', sans-serif;
+.right h1{
+    font-family: var(--main-font-ubuntu);
     font-size: 32pt;
     font-weight: 700;
 }
 
-h2{
-    font-family: 'Lato', sans-serif;
+.right h2{
+    font-family: var(--main-font-lato);
     font-size: 18pt;
     font-weight: 400;
     color:#fe8f00;
 }
 
-p{
-    font-family: 'Lato', sans-serif;
+.right p{
+    font-family: var(--main-font-lato);
     font-size: 16pt;
     font-weight: 300;
 }
@@ -59,7 +70,7 @@ p{
     height:4em;
     border-radius: 2em;
     border: none;
-    font-family: var(--main-font-ubuntu);
+    font-family: var(--main-font-lato);
     background-color: var(--second-bg-color);
     color:white;
     align-items: center;

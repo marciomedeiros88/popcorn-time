@@ -7,7 +7,8 @@
 @import "./pages/Moviedetail/index.scss";
 
 :root{
-    --main-font-ubuntu: 'Lato', sans-serif;
+    --main-font-lato: 'Lato', sans-serif;
+    --main-font-ubuntu: 'Ubuntu', sans-serif;
     --main-bg-color: #083D48;
     --second-bg-color: #081F2E;
     --third-bg-color: #02131e;
@@ -19,19 +20,19 @@ body{
 }
 
 h1{
-    font-family: 'Ubuntu', sans-serif;
+    font-family: var(--main-font-ubuntu);
     font-size: 20pt;
     font-weight: 700;
 }
 
 h2{
-    font-family: 'Lato', sans-serif;
+    font-family: var(--main-font-lato);
     font-size: 18pt;
     font-weight: 400;
 }
 
 p{
-    font-family: 'Lato', sans-serif;
+    font-family: var(--main-font-lato);
     font-size: 12pt;
     font-weight: 300;
 }

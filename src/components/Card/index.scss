@@ -56,7 +56,7 @@
     height:4em;
     border-radius: 2em;
     border: none;
-    font-family: var(--main-font-ubuntu);
+    font-family: var(--main-font-lato);
     background-color: var(--third-bg-color);
     color:white;
     align-items: center;
@@ -67,7 +67,6 @@
 }
 
 .card button:hover{
-    font-family: var(--main-font-ubuntu);
     background-color: var(--main-bg-color);
     transition: all 0.5s;
 }
