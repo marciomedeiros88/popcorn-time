@@ -1,6 +1,6 @@
 import logopopcorn from '../../assets/popcorntime.svg'
 import './index.scss'
-
+import {Link} from 'react-router-dom'
 
 function Header(props){
 
@@ -13,7 +13,7 @@ function Header(props){
     return(
         <>
         <header>
-            <div><img src={logopopcorn} alt="Logo Popcorn Time" /></div>
+            <div className='logo'><Link to={"/"} alt="Voltar para home"><img src={logopopcorn} alt="Logo Popcorn Time" /></Link></div>
             <div className='search'>
                 <form onSubmit={handleSubmit}>
                     <div><input type="text" placeholder='Digite aqui o video que procura'/></div>

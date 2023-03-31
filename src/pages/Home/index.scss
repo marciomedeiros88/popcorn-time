@@ -7,3 +7,52 @@
     margin: auto;
     gap:1em;
 }
+
+.Screens{
+    width: 100%;
+    padding-top: 2em;
+    padding-bottom: 8em;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--main-font-ubuntu);
+    background-color: var(--third-bg-color);
+    color: white;
+}
+
+.types_screens{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.pc{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.tv{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.games{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.smarts{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}

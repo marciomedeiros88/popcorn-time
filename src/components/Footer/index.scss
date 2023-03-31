@@ -13,10 +13,22 @@
     height: 20em;
 }
 
-.custom-shape-divider-top-1679948559 .shape-fill {
-    fill: #fff;
+.redes img{
+    width: 2em;
+    align-items: center;
+    margin: 0.25em;
 }
 
 footer{
+    display: flex;
+    flex-direction: row;
+    gap:1em;
+    justify-content: center;
+    align-items: center;
+    vertical-align: bottom;
+    padding:0.5em;
     background-color: var(--main-bg-color);
+    color:white;
+    box-shadow: 0 -0.25em 2em #1b1b1b;
+    mix-blend-mode: multiply;
 }
